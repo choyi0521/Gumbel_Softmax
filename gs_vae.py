@@ -75,8 +75,6 @@ def compute_loss(pred, target, q):
     loss = rc_loss + kl
     return loss
 
-
-
 model = GumbelVAE().to(device)
 optimizer = Adam(model.parameters())
 
